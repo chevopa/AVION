@@ -1,0 +1,79 @@
+@keyframes slideInFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive; /* Fuente de texto: Comic Sans MS */
+    margin: 0;
+    padding: 0;
+    background-color: #FFF0E6; /* Cambio de color de fondo a Crema */
+    color: #333;
+}
+
+.animated-header {
+    animation: slideInFromTop 1s ease-out;
+}
+
+header {
+    background-color: #FFCCCC; /* Cambio de color de fondo del encabezado a Rosa claro */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #FF6666; /* Cambio de color del texto del encabezado a Rosa medio */
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.animated-article {
+    animation: fadeIn 1s ease-out;
+    background-color: #FCE4EC; /* Cambio de color de fondo de los artículos a Rosa pastel */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    color: #FF9999; /* Cambio de color del título del artículo a Rosa medio */
+}
+
+article img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+article p {
+    text-align: justify;
+}
+
+footer {
+    background-color: #FFDAB9; /* Cambio de color de fondo del pie de página a Melocotón */
+    padding: 10px 0;
+    text-align: center;
+}
